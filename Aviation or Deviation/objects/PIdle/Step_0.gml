@@ -1,17 +1,34 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 304FEC98
-/// @DnDArgument : "code" "Speedy = hspeed;$(13_10)$(13_10)if (Speedy > 0.1)$(13_10){$(13_10)	if (Speedy > 3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveRR;$(13_10)	}$(13_10)	$(13_10)	if (Speedy < 3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveR;$(13_10)	}$(13_10)	$(13_10)$(13_10)}$(13_10)$(13_10)if (Speedy == 0)$(13_10){$(13_10)sprite_index = PlayerIdle;$(13_10)}$(13_10)$(13_10)if (Speedy < -0.1)$(13_10){$(13_10)	if (Speedy < -3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveLL;$(13_10)	}$(13_10)	$(13_10)	if (Speedy > -3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveL;$(13_10)	}$(13_10)}$(13_10)	"
-Speedy = hspeed;
+/// @DnDArgument : "code" "SpeedyH = hspeed;$(13_10)SpeedyV = vspeed;$(13_10)$(13_10)if (SpeedyH > 0.1)$(13_10){$(13_10)	if (SpeedyH > 3)$(13_10)	{$(13_10)		$(13_10)	if (SpeedyV > 3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveRRD;$(13_10)	}$(13_10)	$(13_10)	if (SpeedyV < 3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveRR;$(13_10)	}$(13_10)	$(13_10)	if (SpeedyV < -3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveRRU;$(13_10)	}$(13_10)		$(13_10)	}$(13_10)	$(13_10)	$(13_10)	if (SpeedyH < 3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveR;$(13_10)	}$(13_10)	$(13_10)$(13_10)}$(13_10)$(13_10)$(13_10)if (SpeedyH == 0)$(13_10){$(13_10)sprite_index = PlayerIdle;$(13_10)}$(13_10)$(13_10)$(13_10)if (SpeedyH < -0.1)$(13_10){$(13_10)	if (SpeedyH < -3)$(13_10)	{$(13_10)		$(13_10)    if (SpeedyV < -3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveLLU;$(13_10)	}$(13_10)	$(13_10)	if (SpeedyV > -3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveLL;$(13_10)	}$(13_10)	$(13_10)	if (SpeedyV > 3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveLLD;$(13_10)	}$(13_10)	$(13_10)	}$(13_10)	$(13_10)	$(13_10)	if (SpeedyH > -3)$(13_10)	{$(13_10)		sprite_index = PlayerMoveL;$(13_10)	}$(13_10)	$(13_10)	$(13_10)}$(13_10)$(13_10)	"
+SpeedyH = hspeed;
+SpeedyV = vspeed;
 
-if (Speedy > 0.1)
+if (SpeedyH > 0.1)
 {
-	if (Speedy > 3)
+	if (SpeedyH > 3)
+	{
+		
+	if (SpeedyV > 3)
+	{
+		sprite_index = PlayerMoveRRD;
+	}
+	
+	if (SpeedyV < 3)
 	{
 		sprite_index = PlayerMoveRR;
 	}
 	
-	if (Speedy < 3)
+	if (SpeedyV < -3)
+	{
+		sprite_index = PlayerMoveRRU;
+	}
+		
+	}
+	
+	
+	if (SpeedyH < 3)
 	{
 		sprite_index = PlayerMoveR;
 	}
@@ -19,22 +36,42 @@ if (Speedy > 0.1)
 
 }
 
-if (Speedy == 0)
+
+if (SpeedyH == 0)
 {
 sprite_index = PlayerIdle;
 }
 
-if (Speedy < -0.1)
+
+if (SpeedyH < -0.1)
 {
-	if (Speedy < -3)
+	if (SpeedyH < -3)
+	{
+		
+    if (SpeedyV < -3)
+	{
+		sprite_index = PlayerMoveLLU;
+	}
+	
+	if (SpeedyV > -3)
 	{
 		sprite_index = PlayerMoveLL;
 	}
 	
-	if (Speedy > -3)
+	if (SpeedyV > 3)
+	{
+		sprite_index = PlayerMoveLLD;
+	}
+	
+	}
+	
+	
+	if (SpeedyH > -3)
 	{
 		sprite_index = PlayerMoveL;
 	}
+	
+	
 }
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
@@ -47,7 +84,7 @@ if (l3F616B5A_0)
 {
 	/// @DnDAction : YoYo Games.Movement.Set_Speed
 	/// @DnDVersion : 1
-	/// @DnDHash : 03F6F045
+	/// @DnDHash : 381D9E6C
 	/// @DnDParent : 3F616B5A
 	/// @DnDArgument : "speed" "-0.25"
 	/// @DnDArgument : "speed_relative" "1"
