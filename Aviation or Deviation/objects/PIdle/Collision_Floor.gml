@@ -1,7 +1,6 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDAction : YoYo Games.Movement.Set_Speed
 /// @DnDVersion : 1
-/// @DnDHash : 3481447D
-/// @DnDArgument : "code" "vspeed = -3;$(13_10)$(13_10)hspeed = -3;"
-vspeed = -3;
-
-hspeed = -3;
+/// @DnDHash : 1FC268BD
+/// @DnDArgument : "speed" "-1"
+/// @DnDArgument : "type" "2"
+vspeed = -1;
