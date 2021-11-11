@@ -112,16 +112,16 @@ if (l59871CBB_0)
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
-/// @DnDHash : 58340B33
+/// @DnDHash : 084B2BFE
 /// @DnDArgument : "key" "ord("W")"
-var l58340B33_0;
-l58340B33_0 = keyboard_check(ord("W"));
-if (l58340B33_0)
+var l084B2BFE_0;
+l084B2BFE_0 = keyboard_check(ord("W"));
+if (l084B2BFE_0)
 {
 	/// @DnDAction : YoYo Games.Movement.Set_Speed
 	/// @DnDVersion : 1
-	/// @DnDHash : 311A5DDC
-	/// @DnDParent : 58340B33
+	/// @DnDHash : 2F28C903
+	/// @DnDParent : 084B2BFE
 	/// @DnDArgument : "speed" "-0.25"
 	/// @DnDArgument : "speed_relative" "1"
 	/// @DnDArgument : "type" "2"
@@ -130,16 +130,16 @@ if (l58340B33_0)
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
-/// @DnDHash : 2E11131D
+/// @DnDHash : 52CAB9C2
 /// @DnDArgument : "key" "ord("S")"
-var l2E11131D_0;
-l2E11131D_0 = keyboard_check(ord("S"));
-if (l2E11131D_0)
+var l52CAB9C2_0;
+l52CAB9C2_0 = keyboard_check(ord("S"));
+if (l52CAB9C2_0)
 {
 	/// @DnDAction : YoYo Games.Movement.Set_Speed
 	/// @DnDVersion : 1
-	/// @DnDHash : 0D7CAC52
-	/// @DnDParent : 2E11131D
+	/// @DnDHash : 6965F974
+	/// @DnDParent : 52CAB9C2
 	/// @DnDArgument : "speed" "0.25"
 	/// @DnDArgument : "speed_relative" "1"
 	/// @DnDArgument : "type" "2"
