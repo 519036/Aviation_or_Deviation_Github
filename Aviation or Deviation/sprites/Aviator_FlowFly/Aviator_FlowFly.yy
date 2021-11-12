@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Collectables",
+    "path": "folders/Sprites/Collectables.yy",
   },
   "resourceVersion": "1.0",
   "name": "Aviator_FlowFly",

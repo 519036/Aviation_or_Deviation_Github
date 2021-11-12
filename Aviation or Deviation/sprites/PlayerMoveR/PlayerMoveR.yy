@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "FreeFlowPlayer",
+    "path": "folders/Sprites/FreeFlowPlayer.yy",
   },
   "resourceVersion": "1.0",
   "name": "PlayerMoveR",
